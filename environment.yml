@@ -1,0 +1,12 @@
+name: happiness_report_streamlit
+channels:
+  - defaults
+dependencies:
+  - python=3.9.17
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyter
+  - streamlit
+  - plotly
