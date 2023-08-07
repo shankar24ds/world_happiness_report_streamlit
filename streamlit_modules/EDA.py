@@ -196,7 +196,7 @@ def display():
             df_corr = heatmap_data.corr().round(1)
             mask = np.zeros_like(df_corr, dtype=bool)
             mask[np.triu_indices_from(mask)] = True
-            df_corr_viz = df_corr.mask(mask).dropna(how='all').dropna('columns', how='all')
+            df_corr_viz = df_corr.mask(mask).dropna(how='all', axis=0).dropna(how='all', axis=1)
 
             fig.add_trace(
                 go.Heatmap(z=df_corr_viz.values,
