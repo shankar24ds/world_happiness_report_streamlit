@@ -1,7 +1,7 @@
 import streamlit as st
-import data_merge
-import data_cleaning
-import EDA
+from streamlit_modules import data_merge
+from streamlit_modules import data_cleaning
+from streamlit_modules import EDA
 
 def main():
     st.set_page_config(layout="wide")

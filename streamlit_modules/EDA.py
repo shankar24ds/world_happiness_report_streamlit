@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def display():
-    df = pd.read_pickle("../data/processed/df_cleaned.pkl")
+    df = pd.read_pickle("data/processed/df_cleaned.pkl")
     
     ## 1. Table - Summary Statistics
     with st.expander("Table - Summary Statistics"):
